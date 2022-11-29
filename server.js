@@ -53,7 +53,7 @@ io.on('connection', socket =>{
 })
 
 
-const PORT = 8070;
+const PORT = process.env.PORT || 8070;
 
 const server = httpServer.listen(PORT, ()=>{
     console.log('server running');
